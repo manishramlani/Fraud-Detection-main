@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan Police Hackathon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="bg-[#192131]">
+        <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
+            <a href="/" class="cursor-pointer py-7 pr-7">
+                {% load static %}
+                <img src="{% static 'img/logo.png' %}" alt="My image"
+                width="50px"
+                height="30px">
+            </a>
+
+            <ul class="flex space-x-6 ">
+                <li class="text-white py-7 hover:font-bold cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">About us</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-green hidden group-hover:block transition-all duration-200"></div>
+                </li>
+                <li class="text-white py-7 hover:font-bold cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Fraud Check</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-green hidden group-hover:block transition-all duration-200"></div>
+                </li>
+                <li class="text-white py-7 hover:font-bold cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Contact Us</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-green hidden group-hover:block transition-all duration-200"></div>
+                </li>
+                
+               
+            </ul>
+
+            <div class="flex space-x-6">
+                <img src="{% static 'img/india-flag.svg' %}" alt="Indian flag"
+                width="28px"
+                height="20px"
+                />
+
+                <button class="bg-blue py-3 px-5 font-mullish text-white border-lightBlue border rounded text-sm font-bold hover:font-bold">
+                   <a href = "\login"> Log in</a>
+                </button>
+                <button class="bg-white py-3 px-4 font-mullish text-sm rounded font-bold text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 ">
+                    <a href= "\register" >Sign up</a>
+                    <span class="bold">&#8594;</span> 
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--hero section  -->
+    <section>
+        <div class="relative bg-[#212b42]">
+            <div class="flex w-8/12 max-w-[1080] flex-row justify-between items-center mx-auto">
+                    <!-- left part -->
+                    <div gap-y-6>
+                        <h1 class="text-[50px] text-white font-bold">Rajasthan Police Hackathon</h1>
+                        <h2 class="text-white text-2xl">Data Analysis software for financial frauds</h2>
+    
+                        <div class="mt-10">
+                            <button class="text-white bg-[#5c7da5] border py-3 px-6 mx-auto rounded hover:font-bold transition-all duration-200"><a href= "\login" >Login</a></button>
+                            <button class="text-white bg-[#5c7da5] border py-3 px-6 mx-auto rounded hover:font-bold transition-all duration-200"><a href= "\register">Sign up</a></button>
+                        </div>
+                    </div>
+    
+                    <!-- right part -->
+                    <div>
+                        <img src="{% static 'img/hero.png' %}" alt="My image"
+                        width= '600px'
+                        class="mx-auto my-6"
+                        >
+                    </div>
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="relative mt-[190px] overflow-hidden">
+        <img src="{% static 'img/feature-section1-dottedrows.png' %}" alt="" loading="lazy" width="233" height="167" class="absolute top-[3rem ] right-0 inline-block rotate-180 border-none">
+        <img src="{% static 'img/feature-section1-dottedrows.png' %}" alt="" loading="lazy" width="233" height="167" class="absolute -top-[8rem] left-[10rem]">
+
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4"> 
+            <!-- heading -->
+            <h2 class="text-center font-mullish font-extrabold text-2xl leading-[1.2]">Secure Your Every Transaction with Us</h2>
+            <div class="bg-greenLight w-6 h-1 mx-auto mt-4 mb-6"></div>
+
+            <!-- content box -->
+            <div class="w-full mih-h-[520px] bg-white flex rounded-md relative p-10 py-12 border">
+                <!-- left section -->
+                <div class="flex flex-col w-full gap-y-11">
+                    <h3 class="font-mullish text-xl leading-10 font-bold max-w-[500px] text-[28px]"><span class="text-lightBlue text-[#5c7da5] font-bold">Secure  </span>Your Every Transaction with Us</h3>
+                    <ul class="space-y-2 w-[60%]">
+                        <li class="font-mullish flex items-center space-x-2">
+                            <img src={%static 'img/icons8-tick-48.png' %} alt="" width="20px">
+                            <span>Analyze merchant types to identify potential fraud, especially online or international transactions.</span>
+                        </li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <img src={%static 'img/icons8-tick-48.png' %} alt="" width="20px">
+                            <span>Compare the user's location with the transaction location.</span>
+                        </li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <img src={%static 'img/icons8-tick-48.png' %} alt="" width="20px">
+                            <span>Easy to Integrate</span>
+                        </li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <img src={%static 'img/icons8-tick-48.png' %} alt="" width="20px">
+                            <span>Utilize machine learning algorithms to detect abnormal patterns.</span>
+                        </li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <img src={%static 'img/icons8-tick-48.png' %} alt="" width="20px">
+                            <span>Examine transactions across multiple channels for inconsistencies.</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- for button and hyperlink -->
+                    <div class="flex flex-row items-center space-x-4">
+                        <button class="flex gap-2 items-center bg-[#212b42] w-fit text-white py-[14px] px-[18px]  rounded-md font-mullish font-bold hover:border-r-lightBlue500 transition-all duration-200">
+                            <a href = "\register">Sign Up Now </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
+
+                        </button>
+                        <!-- hyperlink -->
+                        <div class="flex gap-1 items-center cursor-pointer group">
+                            <a href="#" class="font-mullish font-bold text-lightBlue group-hover:text-grayBlue transition-all duration-200">Know More</a>
+                            <svg class="w-3 h-5 group-hover:text-grayBlue" fill="#0080ff" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"></path> </g></svg>
+                        </div>
+                    </div>
+                </div>
+                <img src= {%static 'img/secure.jpeg'%} alt="" class="h-[300px] absolute right-0 bottom-10">
+            </div>
+        </div>
+    </section>
+
+
+    {% comment %} <!-- form for fraud check -->
+    <div class="flex flex-col items-center justify-center mt-10">
+        <h1 class="text-2xl text-[#5c7da5] my-7">Fraud Check</h1>
+    <form class="w-full max-w-[1080px]">
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+              Customer ID
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="101">
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+              Transaction id
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="1">
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+              Merchant Id
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="2001">
+          </div>
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+              Category
+            </label>
+            <div class="relative">
+              <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                <option>Food</option>
+                <option>Retail</option>
+                <option>Travel</option>
+                <option>Online</option>
+                <option>Other</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                Amount
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="000">
+            </div>
+            
+          </div>
+      </form>
+      </div> {% endcomment %}
+
+    <!-- footer -->
+    <footer class="bg-white shadow m-4 dark:bg-gray-800">
+        <div class="flex items-center m-w-[1080] items-center justify-between mx-auto w-full p-4 md:flex md:items-center md:justify-between">
+            <div>
+                <span class="text-lg text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline"></a>. All Rights Reserved.
+                </span>
+            </div>
+        <div>
+            <ul class="flex flex-col flex-wrap mt-3 sm:mt-0 max-w-[1080px]">
+            
+                <h1 class="text-white text-[20px]">Rajasthan Police Hackathon</h1>
+                <h3 class="text-white text-[20px]">Team - Explores</h3>
+                <h3 class="text-white text-[20px]">Reg ID - RJPOLICE_HACK_999 </h3>
+                <h3 class="text-white text-[20px]">Unique Key - 068db88b97e685b08dd8fd738dad0680 </h3>
+        
+        
+                <h3></h3>
+                
+                
+            </ul>
+        </div>
+        
+        </div>
+    </footer>
+
+</body>
+</html>
